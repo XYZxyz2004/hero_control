@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 212 841039431@qq.com, 122, LIC=9WSKC-72QMV-BS1YX-HYKKL-50IQM-AHN9V
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  F:\KEIL5\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.16.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+F:\RM\°¸Àý\remote_motor_control\motor_control\MDK-ARM\motor_control.uvprojx
+Project File Date:  09/29/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'F:\KEIL5\ARM\ARM_Compiler_5.06u7\Bin'
+Build target 'motor_control'
+compiling chassis_m.c...
+../bsp/inc/bsp_can.h(88): warning:  #1295-D: Deprecated declaration TIM_CAN_PeriodElapsedCallback - give arg types
+  extern void TIM_CAN_PeriodElapsedCallback();
+..\task\src\chassis_m.c(92): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      chassis->chassis_motor[i].omega=(sqrt(2)/2*(chassis->vx+chassis->w*chassis->chassis_motor[i].symbol[0]*ry_chassism)+chassis->chassis_motor[i].symbol[1]*sqrt(2)/2*(chassis->vy+chassis->chassis_motor[i].symbol[2]*chassis->w*rx_chassism))/chassis->chassis_motor[i].symbol[3];
+..\task\src\chassis_m.c(92): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      chassis->chassis_motor[i].omega=(sqrt(2)/2*(chassis->vx+chassis->w*chassis->chassis_motor[i].symbol[0]*ry_chassism)+chassis->chassis_motor[i].symbol[1]*sqrt(2)/2*(chassis->vy+chassis->chassis_motor[i].symbol[2]*chassis->w*rx_chassism))/chassis->chassis_motor[i].symbol[3];
+..\task\src\chassis_m.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=22032 RO-data=660 RW-data=176 ZI-data=20376  
+FromELF: creating hex file...
+"motor_control\motor_control.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::STM32F4xx_DFP@2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_motor_control
+  F:/KEIL5/packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  F:/KEIL5/packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
